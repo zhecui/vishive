@@ -1,0 +1,8 @@
+.dropbox
+node_modules/
+*.m
+public/datasets/*.xlsx
+public/datasets/PCA_data_matrix.csv
+public/datasets/DBSCAN_s1_5000.csv
+public/datasets/*.txt
+desktop.ini

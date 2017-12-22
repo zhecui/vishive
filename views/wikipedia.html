@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Wikipedia Text Analysis Example</title>
+
+        <!-- The stylesheets -->
+        <link rel="stylesheet" href="stylesheets/transformation_style.css"></link>
+    </head>
+
+    <body>
+
+        <!-- JavaScript includes. Notice that socket.io.js is served by node.js -->
+        <!-- <script src="/socket.io/socket.io-client/socket.io.js"></script> -->
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+        <script src="javascripts/jquery.wikiblurb.js"></script>
+        <script type="text/javascript" src="api/peer.min.js"></script>
+        <script type="text/javascript" src="javascripts/nGrams.js"></script>
+        <script type="text/javascript" src="javascripts/textAnalysis.js"></script>
+        <script type="text/javascript" src="javascripts/TFIDF.js"></script>
+        <script type="text/javascript" src="javascripts/stopwordremoval.js"></script>
+        <script type="text/javascript" src="javascripts/Distributed_wikipedia.js"></script>
+        <script type="text/javascript" src="javascripts/webworker_wikipedia.js"></script>
+        <script type="text/javascript" src="javascripts/client_ip.js"></script>
+        <script type="text/javascript" src="javascripts/windows.js"></script>
+        <h1 id="VisHive-Peers">
+            VisHive Framework
+        </h1>
+        <div id="Status">
+        Wikipedia Pages Text Analysis and Visualization
+        </div>
+
+        <div class="nav-ui" shrink="false">
+        <div class="btnminimize">
+        </div>
+        <div class="header">
+    
+        <div id="VisHive-id">
+        </div>
+        <div id="myProgress">
+
+        <div id="myBar">
+
+        </div>
+        <div id="ProgressRatio">
+                10% Completed!
+        </div>
+
+        </div>
+        <div id="ip">
+        </div>
+        <button onclick="startWorker()">Start Worker</button> 
+        <button onclick="stopWorker()">Stop Worker</button>
+        <div id="VisHive-text">Connected Peers:
+        <a id="plus-icon" href="http://localhost:3000/wikipedia" target="_blank" >
+            <!-- <img id="plus-icon" src="images/plus-icon.png"></img> -->
+        </a></div>
+            <div id="VisHive-connected-Peers">
+            </div>
+
+
+        <div class="content">
+        </div>
+        </div>
+        </div>
+        
+        <div id = "scatterplot">
+        </div>
+
+            
+        <div id = "VisHive-Actions">
+        </div>
+        <div id = "VisHive-computing">
+        </div>
+        
+
+
+    </body>
+</html>
