@@ -1,5 +1,5 @@
 # VisHive
-VisHive is a toolkit based on NodeJS that creates ad-hoc computational clusters for web browsers. It is a master-slave structure with peer to peer (P2P) for communication. All the communication is handled by matchmaking service (can be hosted on either master/slave or any other computer). Master controls and manages computational job creation, partition, integration of all the returned results, as well as failure of computation, etc. For more info, please refer to the paper in Information Visualization Journal: 
+VisHive is a toolkit based on NodeJS that creates ad-hoc computational clusters for web browsers. It is a master-slave structure with peer to peer (P2P) for communication. All the communication is handled by matchmaking service (can be hosted on either master/slave or any other computer). Master controls and manages computational job creation, partition, integration of all the returned results, as well as failure of computation, etc. For more info, please refer to the paper in Information Visualization Journal: http://www.umiacs.umd.edu/~elm/projects/vishive/vishive.pdf
 
 ## Software Setup
 You need NodeJS to run this repo. Then do
